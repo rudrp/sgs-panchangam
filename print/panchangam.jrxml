@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="panchangam_test112" language="groovy" pageWidth="421" pageHeight="595" columnWidth="381" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="152"/>
+	<field name="Year" class="java.lang.String"/>
+	<field name="Month" class="java.lang.String"/>
+	<field name="Date" class="java.lang.String"/>
+	<field name="Day" class="java.lang.String"/>
+	<field name="Rahukalam" class="java.lang.String"/>
+	<field name="Suryodayam" class="java.lang.String"/>
+	<field name="Suryastamayam" class="java.lang.String"/>
+	<field name="Aayinam" class="java.lang.String"/>
+	<field name="Rutuvu" class="java.lang.String"/>
+	<field name="Maasam" class="java.lang.String"/>
+	<field name="Paksham" class="java.lang.String"/>
+	<field name="Tithi" class="java.lang.String"/>
+	<field name="Tithi Samayam" class="java.lang.String"/>
+	<field name="Nakshatram" class="java.lang.String"/>
+	<field name="N Samayam" class="java.lang.String"/>
+	<field name="Yogam" class="java.lang.String"/>
+	<field name="Karanam" class="java.lang.String"/>
+	<field name="Varjyam Start" class="java.lang.String"/>
+	<field name="Varjyam Sop" class="java.lang.String"/>
+	<field name="Visesham" class="java.lang.String"/>
+	<field name="R1" class="java.lang.String"/>
+	<field name="L1" class="java.lang.String"/>
+	<field name="G1" class="java.lang.String"/>
+	<field name="R2" class="java.lang.String"/>
+	<field name="L2" class="java.lang.String"/>
+	<field name="G2" class="java.lang.String"/>
+	<field name="R3" class="java.lang.String"/>
+	<field name="L3" class="java.lang.String"/>
+	<field name="G3" class="java.lang.String"/>
+	<field name="R4" class="java.lang.String"/>
+	<field name="L4" class="java.lang.String"/>
+	<field name="G4" class="java.lang.String"/>
+	<field name="R5" class="java.lang.String"/>
+	<field name="L5" class="java.lang.String"/>
+	<field name="G5" class="java.lang.String"/>
+	<field name="R6" class="java.lang.String"/>
+	<field name="L6" class="java.lang.String"/>
+	<field name="G6" class="java.lang.String"/>
+	<field name="R7" class="java.lang.String"/>
+	<field name="L7" class="java.lang.String"/>
+	<field name="G7" class="java.lang.String"/>
+	<field name="R8" class="java.lang.String"/>
+	<field name="L8" class="java.lang.String"/>
+	<field name="G8" class="java.lang.String"/>
+	<field name="R9" class="java.lang.String"/>
+	<field name="L9" class="java.lang.String"/>
+	<field name="G9" class="java.lang.String"/>
+	<field name="R10" class="java.lang.String"/>
+	<field name="L10" class="java.lang.String"/>
+	<field name="G10" class="java.lang.String"/>
+	<field name="R11" class="java.lang.String"/>
+	<field name="L11" class="java.lang.String"/>
+	<field name="G11" class="java.lang.String"/>
+	<field name="R12" class="java.lang.String"/>
+	<field name="L12" class="java.lang.String"/>
+	<field name="G12" class="java.lang.String"/>
+	<field name="Varjyam2 Start" class="java.lang.String"/>
+	<field name="Varjyam2 Sop" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="555" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="0" width="192" height="38"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="193" y="0" width="94" height="38"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="0" width="94" height="38"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="38" width="74" height="76"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="74" y="38" width="71" height="38"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="145" y="38" width="71" height="38"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="216" y="38" width="71" height="38"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="38" width="94" height="76"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="74" y="76" width="71" height="38"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="145" y="76" width="71" height="38"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="216" y="76" width="71" height="38"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="114" width="286" height="27"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="114" width="94" height="27"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="141" width="74" height="75"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="75" y="141" width="70" height="75"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="216" y="141" width="71" height="75"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="145" y="141" width="71" height="75"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="141" width="47" height="25"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="166" width="47" height="25"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="191" width="47" height="25"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="334" y="141" width="47" height="25"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="334" y="166" width="47" height="25"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="334" y="191" width="47" height="25"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="216" width="74" height="93"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="216" y="216" width="71" height="93"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="75" y="216" width="141" height="24"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="309" width="74" height="93"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="216" y="309" width="71" height="93"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="216" width="47" height="31"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="247" width="47" height="31"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="278" width="47" height="31"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="334" y="216" width="47" height="31"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="334" y="247" width="47" height="31"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="334" y="278" width="47" height="31"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="309" width="47" height="31"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="334" y="309" width="47" height="31"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="340" width="47" height="31"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="371" width="47" height="31"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="334" y="340" width="47" height="31"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="334" y="371" width="47" height="31"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="145" y="402" width="71" height="75"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="402" width="47" height="25"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="452" width="47" height="25"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="216" y="402" width="71" height="75"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="334" y="402" width="47" height="25"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="75" y="402" width="70" height="75"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="402" width="74" height="75"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="427" width="47" height="25"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="334" y="452" width="47" height="25"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="477" width="74" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="507" width="74" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="75" y="507" width="70" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="75" y="477" width="70" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="216" y="477" width="71" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="216" y="507" width="71" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="477" width="94" height="30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="287" y="507" width="94" height="30"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="0" width="192" height="38"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ఖర నామ సంవత్సరం 2011]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="0" width="94" height="38"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="14"/>
+				</textElement>
+				<text><![CDATA[ఈనాటి పర్వము]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="3" y="37" width="74" height="41"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="79" width="73" height="35"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="30" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="75" y="38" width="70" height="38"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="14"/>
+				</textElement>
+				<text><![CDATA[ఋతువు]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="38" width="71" height="38"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="14"/>
+				</textElement>
+				<text><![CDATA[మాసం]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="216" y="38" width="71" height="38"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="14"/>
+				</textElement>
+				<text><![CDATA[పక్షం]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="216" y="76" width="71" height="38"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Paksham}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="38" width="94" height="76" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Visesham}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="76" width="70" height="38"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Rutuvu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="145" y="76" width="71" height="38"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Maasam}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="287" y="114" width="94" height="27"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[లగ్నాంతకాలములు]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="114" width="286" height="27"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[రాశి చక్రం  గ్రహ స్థితి]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="75" y="141" width="70" height="24"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<text><![CDATA[1 మేషం]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="140" width="74" height="25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<text><![CDATA[12 మీనం]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="216" y="141" width="71" height="24"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<text><![CDATA[3 మిథునం]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="141" width="71" height="24"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<text><![CDATA[2 వృషభం]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="1" y="166" width="74" height="50" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{G4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="216" y="166" width="71" height="50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{G7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="145" y="165" width="71" height="51"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{G6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="75" y="165" width="70" height="51"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{G5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="191" width="45" height="25"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{L6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="166" width="45" height="25"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{L5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="139" width="47" height="26"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{L4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="216" y="216" width="71" height="25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<text><![CDATA[4 కర్కాటకం]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="75" y="219" width="141" height="28"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Gautami" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[పంచాంగం]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="219" width="73" height="25"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<text><![CDATA[11 కుంభం]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="216" y="244" width="71" height="65"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{G8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="244" width="74" height="65"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{G3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="336" y="247" width="44" height="31"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{L8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="216" width="49" height="32"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{L7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="336" y="278" width="44" height="31"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{L9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="336" y="309" width="44" height="31"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{L10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="340" width="44" height="31"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{L11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="371" width="44" height="31"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{L12}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="216" y="402" width="71" height="25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<text><![CDATA[6 కన్యా]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="145" y="427" width="71" height="50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{G11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="216" y="427" width="71" height="50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{G10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="74" y="427" width="71" height="50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{G12}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="75" y="402" width="70" height="25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<text><![CDATA[8 వృశ్చికం]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="402" width="73" height="25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<text><![CDATA[9 ధనుస్సు]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="402" width="71" height="25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<text><![CDATA[7 తులా]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="427" width="74" height="50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{G1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="216" y="312" width="73" height="25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<text><![CDATA[5 సింహం]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="309" width="74" height="25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<text><![CDATA[10 మకరం]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="216" y="337" width="71" height="65"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{G9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="337" width="74" height="65"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{G2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="427" width="45" height="22"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{L2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="338" y="400" width="45" height="27"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{L1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="247" width="48" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Tithi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="135" y="309" width="43" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Nakshatram}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="278" width="100" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Day}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="135" y="342" width="81" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Yogam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="134" y="373" width="82" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Karanam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="166" y="247" width="50" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Tithi Samayam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="309" width="38" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{N Samayam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="338" y="452" width="44" height="25"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{L3}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="334" y="427" width="47" height="25"/>
+			</rectangle>
+			<textField>
+				<reportElement x="337" y="430" width="45" height="25"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{L2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="507" width="73" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[సూర్యాస్తం]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="75" y="476" width="71" height="31"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Suryodayam}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="287" y="477" width="93" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[రాహుకాలం]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="75" y="507" width="70" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Suryastamayam}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="477" width="75" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[సూర్యోదయం]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="288" y="507" width="92" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Rahukalam}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="78" y="248" width="39" height="29"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="15"/>
+				</textElement>
+				<text><![CDATA[తిథి –]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="308" width="56" height="29"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="15"/>
+				</textElement>
+				<text><![CDATA[నక్షత్రం – ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="340" width="56" height="31"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="15"/>
+				</textElement>
+				<text><![CDATA[యోగం –]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="371" width="57" height="29"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="15"/>
+				</textElement>
+				<text><![CDATA[కరణం  –]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="243" y="476" width="16" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="75" y="216" width="142" height="187"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="289" y="141" width="45" height="24"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{R4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="289" y="165" width="47" height="26"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{R5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="191" width="49" height="25"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{R6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="219" width="48" height="25"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{R7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="289" y="244" width="45" height="33"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{R8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="289" y="277" width="46" height="31"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{R9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="289" y="309" width="45" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{R10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="342" width="47" height="29"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{R11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="371" width="50" height="29"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{R12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="289" y="402" width="45" height="25"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{R1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="427" width="49" height="25"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{R2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="289" y="452" width="45" height="23"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Gautami" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{R3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="193" y="0" width="94" height="37"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="14"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Aayinam}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="145" y="507" width="71" height="30"/>
+			</rectangle>
+			<textField>
+				<reportElement x="217" y="477" width="26" height="28"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Varjyam Start}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="259" y="477" width="28" height="28"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Varjyam Sop}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="243" y="505" width="16" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="216" y="507" width="27" height="28"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Varjyam2 Start}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="259" y="507" width="28" height="28"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Varjyam2 Sop}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="145" y="477" width="71" height="28"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="14"/>
+				</textElement>
+				<text><![CDATA[వర్జ్యం 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="506" width="73" height="29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gautami" size="14"/>
+				</textElement>
+				<text><![CDATA[వర్జ్యం 2]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="1" y="0" width="380" height="537"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+	</detail>
+</jasperReport>
