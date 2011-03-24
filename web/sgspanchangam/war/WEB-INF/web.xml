@@ -4,6 +4,11 @@ xmlns="http://java.sun.com/xml/ns/javaee"
 xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+<listener>
+    <listener-class>
+			org.sgsdatta.panchangam.web.PanchangamApplicationListener</listener-class>
+  </listener>
+  
 	<servlet>
 		<servlet-name>PanchangamServlet</servlet-name>
 		<servlet-class>org.sgsdatta.panchangam.PanchangamServlet</servlet-class>

@@ -5,7 +5,6 @@ import java.util.logging.Logger;
 
 import javax.servlet.http.*;
 
-import org.sgsdatta.panchangam.data.loader.PanchangamDataLoader;
 
 @SuppressWarnings("serial")
 public class PanchangamServlet extends HttpServlet {

@@ -53,5 +53,14 @@ public class PanchangamDAO extends DAOBase {
 			log.info("SAVED to DataStore  " + panchangam.getGregorianDate());
 		}
 	}
+	
+	/**
+	 * Truncate.
+	 */
+	public void truncate(){
+		Objectify ofy = ObjectifyService.begin();
+		ofy.delete(ofy.query(Panchangam.class).fetchKeys());
+		
+	}
 
 }
