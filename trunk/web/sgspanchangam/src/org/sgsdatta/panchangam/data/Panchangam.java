@@ -4,8 +4,6 @@ import java.util.Date;
 
 import javax.persistence.Id;
 
-import com.google.appengine.repackaged.org.joda.time.LocalTime;
-import com.google.appengine.repackaged.org.joda.time.TimeOfDay;
 import com.googlecode.objectify.annotation.Cached;
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Indexed;
@@ -25,58 +23,58 @@ public class Panchangam {
 	private String date = null;
 	private String day = null;
 	private String rahukalam = null;
-	private LocalTime sunrise = null;
-	private LocalTime sunset = null;
+	private Date sunrise = null;
+	private Date sunset = null;
 	private String aayanam = null;
 	private String rutuvu = null;
 	private String maasam = null;
 	private String paksham = null;
 	private String tithi = null;
-	private LocalTime tithiTime = null;
+	private Date tithiTime = null;
 	private String nakshatram = null;
-	private LocalTime nakshatramTime = null;
+	private Date nakshatramTime = null;
 	private String yogam = null;
 	private String karanam = null;
-	private LocalTime varjyam1Start = null;
-	private LocalTime varjyam1End = null;
-	private LocalTime varjyam2Start = null;
-	private LocalTime varjyam2End = null;
+	private Date varjyam1Start = null;
+	private Date varjyam1End = null;
+	private Date varjyam2Start = null;
+	private Date varjyam2End = null;
 	private String visesham = null;
 	private String r1 = null;
-	private LocalTime l1 = null;
+	private Date l1 = null;
 	private String g1 = null;
 	private String r2 = null;
-	private LocalTime l2 = null;
+	private Date l2 = null;
 	private String g2 = null;
 	private String r3 = null;
-	private LocalTime l3 = null;
+	private Date l3 = null;
 	private String g3 = null;
 	private String r4 = null;
-	private LocalTime l4 = null;
+	private Date l4 = null;
 	private String g4 = null;
 	private String r5 = null;
-	private LocalTime l5 = null;
+	private Date l5 = null;
 	private String g5 = null;
 	private String r6 = null;
-	private LocalTime l6 = null;
+	private Date l6 = null;
 	private String g6 = null;
 	private String r7 = null;
-	private LocalTime l7 = null;
+	private Date l7 = null;
 	private String g7 = null;
 	private String r8 = null;
-	private LocalTime l8 = null;
+	private Date l8 = null;
 	private String g8 = null;
 	private String r9 = null;
-	private LocalTime l9 = null;
+	private Date l9 = null;
 	private String g9 = null;
 	private String r10 = null;
-	private LocalTime l10 = null;
+	private Date l10 = null;
 	private String g10 = null;
 	private String r11 = null;
-	private LocalTime l11 = null;
+	private Date l11 = null;
 	private String g11 = null;
 	private String r12 = null;
-	private LocalTime l12 = null;
+	private Date l12 = null;
 	private String g12 = null;
 
 	public Long getId() {
@@ -135,19 +133,19 @@ public class Panchangam {
 		this.rahukalam = rahukalam;
 	}
 
-	public LocalTime getSunrise() {
+	public Date getSunrise() {
 		return sunrise;
 	}
 
-	public void setSunrise(LocalTime sunrise) {
+	public void setSunrise(Date sunrise) {
 		this.sunrise = sunrise;
 	}
 
-	public LocalTime getSunset() {
+	public Date getSunset() {
 		return sunset;
 	}
 
-	public void setSunset(LocalTime sunset) {
+	public void setSunset(Date sunset) {
 		this.sunset = sunset;
 	}
 
@@ -191,11 +189,11 @@ public class Panchangam {
 		this.tithi = tithi;
 	}
 
-	public LocalTime getTithiTime() {
+	public Date getTithiTime() {
 		return tithiTime;
 	}
 
-	public void setTithiTime(LocalTime tithiTime) {
+	public void setTithiTime(Date tithiTime) {
 		this.tithiTime = tithiTime;
 	}
 
@@ -207,11 +205,11 @@ public class Panchangam {
 		this.nakshatram = nakshatram;
 	}
 
-	public LocalTime getNakshatramTime() {
+	public Date getNakshatramTime() {
 		return nakshatramTime;
 	}
 
-	public void setNakshatramTime(LocalTime nakshatramTime) {
+	public void setNakshatramTime(Date nakshatramTime) {
 		this.nakshatramTime = nakshatramTime;
 	}
 
@@ -231,35 +229,35 @@ public class Panchangam {
 		this.karanam = karanam;
 	}
 
-	public LocalTime getVarjyam1Start() {
+	public Date getVarjyam1Start() {
 		return varjyam1Start;
 	}
 
-	public void setVarjyam1Start(LocalTime varjyam1Start) {
+	public void setVarjyam1Start(Date varjyam1Start) {
 		this.varjyam1Start = varjyam1Start;
 	}
 
-	public LocalTime getVarjyam1End() {
+	public Date getVarjyam1End() {
 		return varjyam1End;
 	}
 
-	public void setVarjyam1End(LocalTime varjyam1End) {
+	public void setVarjyam1End(Date varjyam1End) {
 		this.varjyam1End = varjyam1End;
 	}
 
-	public LocalTime getVarjyam2Start() {
+	public Date getVarjyam2Start() {
 		return varjyam2Start;
 	}
 
-	public void setVarjyam2Start(LocalTime varjyam2Start) {
+	public void setVarjyam2Start(Date varjyam2Start) {
 		this.varjyam2Start = varjyam2Start;
 	}
 
-	public LocalTime getVarjyam2End() {
+	public Date getVarjyam2End() {
 		return varjyam2End;
 	}
 
-	public void setVarjyam2End(LocalTime varjyam2End) {
+	public void setVarjyam2End(Date varjyam2End) {
 		this.varjyam2End = varjyam2End;
 	}
 
@@ -279,11 +277,11 @@ public class Panchangam {
 		this.r1 = r1;
 	}
 
-	public LocalTime getL1() {
+	public Date getL1() {
 		return l1;
 	}
 
-	public void setL1(LocalTime l1) {
+	public void setL1(Date l1) {
 		this.l1 = l1;
 	}
 
@@ -303,11 +301,11 @@ public class Panchangam {
 		this.r2 = r2;
 	}
 
-	public LocalTime getL2() {
+	public Date getL2() {
 		return l2;
 	}
 
-	public void setL2(LocalTime l2) {
+	public void setL2(Date l2) {
 		this.l2 = l2;
 	}
 
@@ -327,11 +325,11 @@ public class Panchangam {
 		this.r3 = r3;
 	}
 
-	public LocalTime getL3() {
+	public Date getL3() {
 		return l3;
 	}
 
-	public void setL3(LocalTime l3) {
+	public void setL3(Date l3) {
 		this.l3 = l3;
 	}
 
@@ -351,11 +349,11 @@ public class Panchangam {
 		this.r4 = r4;
 	}
 
-	public LocalTime getL4() {
+	public Date getL4() {
 		return l4;
 	}
 
-	public void setL4(LocalTime l4) {
+	public void setL4(Date l4) {
 		this.l4 = l4;
 	}
 
@@ -375,11 +373,11 @@ public class Panchangam {
 		this.r5 = r5;
 	}
 
-	public LocalTime getL5() {
+	public Date getL5() {
 		return l5;
 	}
 
-	public void setL5(LocalTime l5) {
+	public void setL5(Date l5) {
 		this.l5 = l5;
 	}
 
@@ -399,11 +397,11 @@ public class Panchangam {
 		this.r6 = r6;
 	}
 
-	public LocalTime getL6() {
+	public Date getL6() {
 		return l6;
 	}
 
-	public void setL6(LocalTime l6) {
+	public void setL6(Date l6) {
 		this.l6 = l6;
 	}
 
@@ -423,11 +421,11 @@ public class Panchangam {
 		this.r7 = r7;
 	}
 
-	public LocalTime getL7() {
+	public Date getL7() {
 		return l7;
 	}
 
-	public void setL7(LocalTime l7) {
+	public void setL7(Date l7) {
 		this.l7 = l7;
 	}
 
@@ -447,11 +445,11 @@ public class Panchangam {
 		this.r8 = r8;
 	}
 
-	public LocalTime getL8() {
+	public Date getL8() {
 		return l8;
 	}
 
-	public void setL8(LocalTime l8) {
+	public void setL8(Date l8) {
 		this.l8 = l8;
 	}
 
@@ -471,11 +469,11 @@ public class Panchangam {
 		this.r9 = r9;
 	}
 
-	public LocalTime getL9() {
+	public Date getL9() {
 		return l9;
 	}
 
-	public void setL9(LocalTime l9) {
+	public void setL9(Date l9) {
 		this.l9 = l9;
 	}
 
@@ -495,11 +493,11 @@ public class Panchangam {
 		this.r10 = r10;
 	}
 
-	public LocalTime getL10() {
+	public Date getL10() {
 		return l10;
 	}
 
-	public void setL10(LocalTime l10) {
+	public void setL10(Date l10) {
 		this.l10 = l10;
 	}
 
@@ -519,11 +517,11 @@ public class Panchangam {
 		this.r11 = r11;
 	}
 
-	public LocalTime getL11() {
+	public Date getL11() {
 		return l11;
 	}
 
-	public void setL11(LocalTime l11) {
+	public void setL11(Date l11) {
 		this.l11 = l11;
 	}
 
@@ -543,11 +541,11 @@ public class Panchangam {
 		this.r12 = r12;
 	}
 
-	public LocalTime getL12() {
+	public Date getL12() {
 		return l12;
 	}
 
-	public void setL12(LocalTime l12) {
+	public void setL12(Date l12) {
 		this.l12 = l12;
 	}
 
@@ -557,6 +555,12 @@ public class Panchangam {
 
 	public void setG12(String g12) {
 		this.g12 = g12;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.gregorianDate + " " + this.tithi + " " + this.tithiTime;
 	}
 
 }
