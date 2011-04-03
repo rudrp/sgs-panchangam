@@ -1,11 +1,12 @@
 package org.sgsdatta.panchangam.dao;
 
-import java.util.Date;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.sgsdatta.panchangam.data.Panchangam;
 
+import com.googlecode.objectify.Key;
 import com.googlecode.objectify.Objectify;
 import com.googlecode.objectify.ObjectifyService;
 import com.googlecode.objectify.Query;
@@ -29,7 +30,7 @@ public class PanchangamDAO extends DAOBase {
 	 *            the gregorian date
 	 * @return the panchangam by date
 	 */
-	public Panchangam getPanchangamByDate(Date gregorianDate) {
+	public Panchangam getPanchangamByDate(String gregorianDate) {
 
 		Objectify ofy = ObjectifyService.begin();
 		Query<Panchangam> query = ofy.query(Panchangam.class).filter(
@@ -37,6 +38,13 @@ public class PanchangamDAO extends DAOBase {
 		Panchangam panchangam = query.get();
 
 		return panchangam;
+
+	}
+
+	public Map<Key<Panchangam>, Panchangam> getAllPanchangam() {
+
+		Objectify ofy = ObjectifyService.begin();
+		return ofy.get(ofy.query(Panchangam.class).fetchKeys());
 
 	}
 
@@ -53,14 +61,14 @@ public class PanchangamDAO extends DAOBase {
 			log.info("SAVED to DataStore  " + panchangam.getGregorianDate());
 		}
 	}
-	
+
 	/**
 	 * Truncate.
 	 */
-	public void truncate(){
+	public void truncate() {
 		Objectify ofy = ObjectifyService.begin();
 		ofy.delete(ofy.query(Panchangam.class).fetchKeys());
-		
+
 	}
 
 }
