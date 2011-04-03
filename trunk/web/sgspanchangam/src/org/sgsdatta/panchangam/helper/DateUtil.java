@@ -3,7 +3,6 @@ package org.sgsdatta.panchangam.helper;
 import java.util.Date;
 
 import org.joda.time.DateTimeComparator;
-import org.joda.time.DateTimeFieldType;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
