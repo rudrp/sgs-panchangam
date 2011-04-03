@@ -37,8 +37,8 @@ public class PanchangamServlet extends HttpServlet {
 		String timeZone = request.getParameter("timeZone");
 		String language = request.getParameter("language");
 
-		if("".equals(time)){
-			time=null;
+		if ("".equals(time)) {
+			time = null;
 		}
 		Panchangam panchangam = DailyPanchangamHelper
 				.getCurrentPanchangamByTime(date, time, timeZone);
@@ -55,6 +55,10 @@ public class PanchangamServlet extends HttpServlet {
 		String json = gson.toJson(panchangam);
 		response.setContentType("text/html");
 		response.setCharacterEncoding("UTF-8");
+		response.setDateHeader("Expires", 0);
+		response.setHeader("Cache-Control",
+				"no-cache, no-store, must-revalidate");
+		response.setHeader("Pragma", "no-cache");
 		response.getWriter().write(json);
 
 	}
