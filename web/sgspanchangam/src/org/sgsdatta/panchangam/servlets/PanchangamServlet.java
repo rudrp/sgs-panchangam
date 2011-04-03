@@ -37,6 +37,9 @@ public class PanchangamServlet extends HttpServlet {
 		String timeZone = request.getParameter("timeZone");
 		String language = request.getParameter("language");
 
+		if("".equals(time)){
+			time=null;
+		}
 		Panchangam panchangam = DailyPanchangamHelper
 				.getCurrentPanchangamByTime(date, time, timeZone);
 		Gson gson = new GsonBuilder()
