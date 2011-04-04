@@ -72,7 +72,9 @@
 			time : $('#time').val(),
 			callback : ""
 		}, function(data) {
-			$("#panchangamViewer").html(buildPanchangamHTML(data));
+			setTimeout( function() { $("#panchangamViewer").html(buildPanchangamHTML(data)); }, 50 );
+
+			
 		});
 	}
 
