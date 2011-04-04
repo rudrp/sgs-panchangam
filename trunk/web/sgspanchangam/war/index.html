@@ -1,27 +1,113 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
-<!-- above set at the top of the file will set     -->
-<!-- the browser's rendering engine into           -->
-<!-- "Quirks Mode". Replacing this declaration     -->
-<!-- with a "Standards Mode" doctype is supported, -->
-<!-- but may lead to some differences in layout.   -->
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Hello App Engine</title>
-  </head>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description"
+	content="Find the constellation of planets for today, according to Indian Astrology" />
 
-  <body>
-    <h1>Hello App Engine!</h1>
-	
-    <table>
-      <tr>
-        <td colspan="2" style="font-weight:bold;">Available Servlets:</td>        
-      </tr>
-      <tr>
-        <td><a href="sgspanchangam">Sgspanchangam</a></td>
-      </tr>
-    </table>
-  </body>
+<link rel="icon" type="image/png" href="favicon.ico" />
+
+<link type="text/css" rel="stylesheet" href="theme/start/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="theme/fg.menu.css">
+<link type="text/css" rel="stylesheet" href="theme/panchangam.css">
+
+
+<title>SGS Panchangam</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/jquery.render.js"></script>
+<script type="text/javascript" src="js/jquery.date.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/fg.menu.js"></script>
+<script type="text/javascript" src="js/jquery.timepicker.js"></script>
+
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		// BUTTONS
+		$('.fg-button').hover(function() {
+			$(this).removeClass('ui-state-default').addClass('ui-state-focus');
+		}, function() {
+			$(this).removeClass('ui-state-focus').addClass('ui-state-default');
+		});
+
+		// MENUS
+		$('#panchangam_menu').menu({
+			content : $('#panchangam_menu').next().html(),
+			backLink : false
+		});
+		showPanchangamViewer();
+	});
+
+	function showPanchangamViewer() {
+		$('#content').html('<p class="heading">ఈనాటి గ్రహ స్థితి</p><p>Date:&nbsp;<input type="text" name="date" id="date"style="text-align: right; width: 8%">&nbsp;Time:&nbsp;<input type="text" name="time" id="time" style="text-align: right; width: 5%">&nbsp;&nbsp;&nbsp;&nbsp;<button id="showPanchangam">గ్రహ స్థితి తెలుసుకోండి</button></p><div id="panchangamViewer"></div>');
+		$('#date').datepicker({
+			dateFormat : 'dd-mm-yy',
+			defaultDate : +0,
+			minDate : new Date(2011, 4 - 1, 4),
+			maxDate : new Date(2012, 3 - 1, 24)
+		});
+
+		$('#time').timepicker({
+
+		});
+
+		$("button").button();
+		$("#showPanchangam").click(function() {
+			showPanchangam();
+		});
+
+		initPanchangamViewer();
+	}
+
+	function initPanchangamViewer() {
+		$('#date').val(($.date('d-m-Y')));
+		showPanchangam();
+	}
+	function showPanchangam() {
+		$.getJSON("http://localhost:8888/panchangam", {
+			date : $('#date').val(),
+			time : $('#time').val(),
+			callback : ""
+		}, function(data) {
+			$("#panchangamViewer").html(buildPanchangamHTML(data));
+		});
+	}
+
+	function load(page) {
+		loadContent("#content", page);
+	}
+</script>
+
+
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<img src="images/headerpanchanga.jpg" class="headerimage">
+			<div id="navbar">
+				<a tabindex="0" href="index.html"
+					class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all"
+					id="home" onclick="load('content/1.html')">ప్రదాన ఫుట</a> <a tabindex="1" href="#panchangam"
+					class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all"
+					id="panchangam_menu"><span class="ui-icon ui-icon-triangle-1-s"></span>పంచాంగ</a>
+				<div id="panchangam" class="hidden">
+					<ul>
+						<li><a href="#">Today</a></li>
+					</ul>
+				</div>
+				<a tabindex="3" href="#"
+					class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all"
+					id="panchangam_menu" onclick="showPanchangamViewer()">గ్రహ
+					స్థితి తెలుసుకోండి</a> <a tabindex="2" href="#"
+					class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all"
+					id="contact_menu">సంప్రదించండి </a>
+
+			</div>
+		</div>
+		<div id="content"></div>
+	</div>
+</body>
 </html>

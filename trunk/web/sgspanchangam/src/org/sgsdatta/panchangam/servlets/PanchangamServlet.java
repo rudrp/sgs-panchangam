@@ -51,7 +51,7 @@ public class PanchangamServlet extends HttpServlet {
 						format.setTimeZone(Constants.IST);
 						return new JsonPrimitive(format.format(arg0));
 					}
-				}).excludeFieldsWithoutExposeAnnotation().create();
+				}).excludeFieldsWithoutExposeAnnotation().serializeNulls().create();
 		String json = gson.toJson(panchangam);
 		response.setContentType("text/html");
 		response.setCharacterEncoding("UTF-8");
