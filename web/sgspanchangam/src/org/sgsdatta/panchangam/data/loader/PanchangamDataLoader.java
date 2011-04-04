@@ -66,7 +66,7 @@ public class PanchangamDataLoader {
 	private Panchangam constructPanchangam(Row row) {
 		Panchangam panchangam = new Panchangam();
 		panchangam.setRaasiChakram(new RaasiChakram());
-		panchangam.setLagnantakaalamulu(new ArrayList<Lagnaantakaalam>());
+		panchangam.setLagnantakaalamulu(new Lagnaantakaalam());
 		for (Cell cell : row) {
 			if (cell.getCellType() != Cell.CELL_TYPE_BLANK) {
 				try {
@@ -169,15 +169,19 @@ public class PanchangamDataLoader {
 					panchangam
 							.getTithis()
 							.get(0)
-							.setTithiTime(appendGregorianDateToTime(panchangam.getGregorianDate(),
-									new SimpleDateFormat("H:mm")
-											.parse(tithiTimes[0])));
+							.setTithiTime(
+									appendGregorianDateToTime(panchangam
+											.getGregorianDate(),
+											new SimpleDateFormat("H:mm")
+													.parse(tithiTimes[0])));
 					panchangam
 							.getTithis()
 							.get(1)
-							.setTithiTime(appendGregorianDateToTime(panchangam.getGregorianDate(),
-									new SimpleDateFormat("H:mm")
-											.parse(tithiTimes[1])));
+							.setTithiTime(
+									appendGregorianDateToTime(panchangam
+											.getGregorianDate(),
+											new SimpleDateFormat("H:mm")
+													.parse(tithiTimes[1])));
 				} catch (ParseException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -297,135 +301,123 @@ public class PanchangamDataLoader {
 			panchangam.getDay().setVisesham(cell.getStringCellValue());
 			break;
 		case 23:
-			panchangam.getLagnantakaalamulu().add(
-					new Lagnaantakaalam(cell.getStringCellValue(),
-							appendGregorianDateToTime(
-									panchangam.getGregorianDate(),
-									cell.getRow()
-											.getCell(cell.getColumnIndex() + 1)
-											.getDateCellValue())));
+			panchangam.getLagnantakaalamulu().setRaasi1(
+					cell.getStringCellValue());
+			panchangam.getLagnantakaalamulu().setTime1(
+					appendGregorianDateToTime(panchangam.getGregorianDate(),
+							cell.getRow().getCell(cell.getColumnIndex() + 1)
+									.getDateCellValue()));
 
 			break;
 		case 24:
 			break;
 		case 25:
-			panchangam.getLagnantakaalamulu().add(
-					new Lagnaantakaalam(cell.getStringCellValue(),
-							appendGregorianDateToTime(
-									panchangam.getGregorianDate(),
-									cell.getRow()
-											.getCell(cell.getColumnIndex() + 1)
-											.getDateCellValue())));
+			panchangam.getLagnantakaalamulu().setRaasi2(
+					cell.getStringCellValue());
+			panchangam.getLagnantakaalamulu().setTime2(
+					appendGregorianDateToTime(panchangam.getGregorianDate(),
+							cell.getRow().getCell(cell.getColumnIndex() + 1)
+									.getDateCellValue()));
 			break;
 		case 26:
 			break;
 		case 27:
-			panchangam.getLagnantakaalamulu().add(
-					new Lagnaantakaalam(cell.getStringCellValue(),
-							appendGregorianDateToTime(
-									panchangam.getGregorianDate(),
-									cell.getRow()
-											.getCell(cell.getColumnIndex() + 1)
-											.getDateCellValue())));
+			panchangam.getLagnantakaalamulu().setRaasi3(
+					cell.getStringCellValue());
+			panchangam.getLagnantakaalamulu().setTime3(
+					appendGregorianDateToTime(panchangam.getGregorianDate(),
+							cell.getRow().getCell(cell.getColumnIndex() + 1)
+									.getDateCellValue()));
 			break;
 		case 28:
 			break;
 		case 29:
-			panchangam.getLagnantakaalamulu().add(
-					new Lagnaantakaalam(cell.getStringCellValue(),
-							appendGregorianDateToTime(
-									panchangam.getGregorianDate(),
-									cell.getRow()
-											.getCell(cell.getColumnIndex() + 1)
-											.getDateCellValue())));
+			panchangam.getLagnantakaalamulu().setRaasi4(
+					cell.getStringCellValue());
+			panchangam.getLagnantakaalamulu().setTime4(
+					appendGregorianDateToTime(panchangam.getGregorianDate(),
+							cell.getRow().getCell(cell.getColumnIndex() + 1)
+									.getDateCellValue()));
 			break;
 		case 30:
 			break;
 		case 31:
-			panchangam.getLagnantakaalamulu().add(
-					new Lagnaantakaalam(cell.getStringCellValue(),
-							appendGregorianDateToTime(
-									panchangam.getGregorianDate(),
-									cell.getRow()
-											.getCell(cell.getColumnIndex() + 1)
-											.getDateCellValue())));
+			panchangam.getLagnantakaalamulu().setRaasi5(
+					cell.getStringCellValue());
+			panchangam.getLagnantakaalamulu().setTime5(
+					appendGregorianDateToTime(panchangam.getGregorianDate(),
+							cell.getRow().getCell(cell.getColumnIndex() + 1)
+									.getDateCellValue()));
 			break;
 		case 32:
 			break;
 		case 33:
-			panchangam.getLagnantakaalamulu().add(
-					new Lagnaantakaalam(cell.getStringCellValue(),
-							appendGregorianDateToTime(
-									panchangam.getGregorianDate(),
-									cell.getRow()
-											.getCell(cell.getColumnIndex() + 1)
-											.getDateCellValue())));
+			panchangam.getLagnantakaalamulu().setRaasi6(
+					cell.getStringCellValue());
+			panchangam.getLagnantakaalamulu().setTime6(
+					appendGregorianDateToTime(panchangam.getGregorianDate(),
+							cell.getRow().getCell(cell.getColumnIndex() + 1)
+									.getDateCellValue()));
 			break;
 		case 34:
 			break;
 		case 35:
-			panchangam.getLagnantakaalamulu().add(
-					new Lagnaantakaalam(cell.getStringCellValue(),
-							appendGregorianDateToTime(
-									panchangam.getGregorianDate(),
-									cell.getRow()
-											.getCell(cell.getColumnIndex() + 1)
-											.getDateCellValue())));
+			panchangam.getLagnantakaalamulu().setRaasi7(
+					cell.getStringCellValue());
+			panchangam.getLagnantakaalamulu().setTime7(
+					appendGregorianDateToTime(panchangam.getGregorianDate(),
+							cell.getRow().getCell(cell.getColumnIndex() + 1)
+									.getDateCellValue()));
 			break;
 		case 36:
 			break;
 		case 37:
-			panchangam.getLagnantakaalamulu().add(
-					new Lagnaantakaalam(cell.getStringCellValue(),
-							appendGregorianDateToTime(
-									panchangam.getGregorianDate(),
-									cell.getRow()
-											.getCell(cell.getColumnIndex() + 1)
-											.getDateCellValue())));
+			panchangam.getLagnantakaalamulu().setRaasi8(
+					cell.getStringCellValue());
+			panchangam.getLagnantakaalamulu().setTime8(
+					appendGregorianDateToTime(panchangam.getGregorianDate(),
+							cell.getRow().getCell(cell.getColumnIndex() + 1)
+									.getDateCellValue()));
 			break;
 		case 38:
 			break;
 		case 39:
-			panchangam.getLagnantakaalamulu().add(
-					new Lagnaantakaalam(cell.getStringCellValue(),
-							appendGregorianDateToTime(
-									panchangam.getGregorianDate(),
-									cell.getRow()
-											.getCell(cell.getColumnIndex() + 1)
-											.getDateCellValue())));
+			panchangam.getLagnantakaalamulu().setRaasi9(
+					cell.getStringCellValue());
+			panchangam.getLagnantakaalamulu().setTime9(
+					appendGregorianDateToTime(panchangam.getGregorianDate(),
+							cell.getRow().getCell(cell.getColumnIndex() + 1)
+									.getDateCellValue()));
 			break;
 		case 40:
 			break;
 		case 41:
-			panchangam.getLagnantakaalamulu().add(
-					new Lagnaantakaalam(cell.getStringCellValue(),
-							appendGregorianDateToTime(
-									panchangam.getGregorianDate(),
-									cell.getRow()
-											.getCell(cell.getColumnIndex() + 1)
-											.getDateCellValue())));
+			panchangam.getLagnantakaalamulu().setRaasi10(
+					cell.getStringCellValue());
+			panchangam.getLagnantakaalamulu().setTime10(
+					appendGregorianDateToTime(panchangam.getGregorianDate(),
+							cell.getRow().getCell(cell.getColumnIndex() + 1)
+									.getDateCellValue()));
 			break;
 		case 42:
 			break;
 		case 43:
-			panchangam.getLagnantakaalamulu().add(
-					new Lagnaantakaalam(cell.getStringCellValue(),
-							appendGregorianDateToTime(
-									panchangam.getGregorianDate(),
-									cell.getRow()
-											.getCell(cell.getColumnIndex() + 1)
-											.getDateCellValue())));
+			panchangam.getLagnantakaalamulu().setRaasi11(
+					cell.getStringCellValue());
+			panchangam.getLagnantakaalamulu().setTime11(
+					appendGregorianDateToTime(panchangam.getGregorianDate(),
+							cell.getRow().getCell(cell.getColumnIndex() + 1)
+									.getDateCellValue()));
 			break;
 		case 44:
 			break;
 		case 45:
-			panchangam.getLagnantakaalamulu().add(
-					new Lagnaantakaalam(cell.getStringCellValue(),
-							appendGregorianDateToTime(
-									panchangam.getGregorianDate(),
-									cell.getRow()
-											.getCell(cell.getColumnIndex() + 1)
-											.getDateCellValue())));
+			panchangam.getLagnantakaalamulu().setRaasi12(
+					cell.getStringCellValue());
+			panchangam.getLagnantakaalamulu().setTime12(
+					appendGregorianDateToTime(panchangam.getGregorianDate(),
+							cell.getRow().getCell(cell.getColumnIndex() + 1)
+									.getDateCellValue()));
 			break;
 		case 46:
 			break;

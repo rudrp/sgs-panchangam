@@ -38,7 +38,7 @@ public class Panchangam {
 	private List<Nakshatram> nakshatrams = null;
 	@Embedded
 	@Expose
-	private List<Lagnaantakaalam> lagnantakaalamulu = null;
+	private Lagnaantakaalam lagnantakaalamulu = null;
 	@Embedded
 	@Expose
 	private RaasiChakram raasiChakram = null;
@@ -91,14 +91,6 @@ public class Panchangam {
 		this.raasiChakram = raasiChakram;
 	}
 
-	public List<Lagnaantakaalam> getLagnantakaalamulu() {
-		return lagnantakaalamulu;
-	}
-
-	public void setLagnantakaalamulu(List<Lagnaantakaalam> lagnantakaalamulu) {
-		this.lagnantakaalamulu = lagnantakaalamulu;
-	}
-
 	public Tithi getCurrentTithi() {
 		return currentTithi;
 	}
@@ -113,6 +105,14 @@ public class Panchangam {
 
 	public void setCurrentNakshatram(Nakshatram currentNakshatram) {
 		this.currentNakshatram = currentNakshatram;
+	}
+
+	public Lagnaantakaalam getLagnantakaalamulu() {
+		return lagnantakaalamulu;
+	}
+
+	public void setLagnantakaalamulu(Lagnaantakaalam lagnantakaalamulu) {
+		this.lagnantakaalamulu = lagnantakaalamulu;
 	}
 
 }

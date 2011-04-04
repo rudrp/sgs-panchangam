@@ -8,6 +8,5 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/gson-1.6.jar" sourcepath="G:/lib_src/gson-1.6-sources.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/joda-time-1.6.2.jar" sourcepath="G:/lib_src/joda-time-1.6.2-sources.jar"/>
 	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER/App Engine"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/Transliterator.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>
