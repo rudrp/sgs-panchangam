@@ -1,9 +1,10 @@
 body {
 	font-size: 82.5%;
-	margin-left: 7%;
-	margin-right: 7%;
+	margin-left: 10%;
+	margin-right: 10%;
 	padding: 0;
 	font-family: Arial;
+	background-color: white;
 }
 
 #container {
@@ -11,9 +12,18 @@ body {
 	background-color: #E5E6FC;
 }
 
+#content {
+	font-size: 100%;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-left: 4%;
+	padding-right: 4%;
+	text-align:center;
+}
+
 .headerimage {
-	width: 790;
-	height: 320;
+	width: 749px;
+	height: 200px;
 }
 
 #header {
@@ -22,16 +32,8 @@ body {
 
 .heading {
 	font-weight: bold;
-	font-size: 140%;
+	font-size: 150%;
 	text-align: center;
-}
-
-#content {
-	font-size: 100%;
-	margin-left: 2%;
-	margin-right: 2%; padding-left : 4%;
-	padding-right: 4%;
-	padding-left: 4%;
 }
 
 .panchangamTable {
@@ -40,14 +42,17 @@ body {
 	width: 70%;
 	height: 30%;
 	font-family: Arial Gautami;
+	border: 1px solid black;
 }
 
 .panchangamTable td {
-	
+	border: 1px solid gray;
 }
 
 #panchangamViewer {
 	padding: 2%;
+	align:center;
+	text-align:center;
 }
 
 #menuLog {

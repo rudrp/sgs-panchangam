@@ -34,15 +34,28 @@
 		});
 
 		// MENUS
-		$('#panchangam_menu').menu({
-			content : $('#panchangam_menu').next().html(),
+		$('#about_menu').menu({
+			content : $('#about_menu').next().html(),
+			backLink : false
+		});
+
+		$('#years_menu').menu({
+			content : $('#years_menu').next().html(),
+			backLink : false
+		});
+
+		$('#sm_menu').menu({
+			content : $('#sm_menu').next().html(),
 			backLink : false
 		});
 		showPanchangamViewer();
+		//loadIFrame('content/graha.html');
 	});
 
 	function showPanchangamViewer() {
-		$('#content').html('<p class="heading">ఈనాటి గ్రహ స్థితి</p><p>Date:&nbsp;<input type="text" name="date" id="date"style="text-align: right; width: 8%">&nbsp;Time:&nbsp;<input type="text" name="time" id="time" style="text-align: right; width: 5%">&nbsp;&nbsp;&nbsp;&nbsp;<button id="showPanchangam">గ్రహ స్థితి తెలుసుకోండి</button></p><div id="panchangamViewer"></div>');
+		$('#content')
+				.html(
+						'<p class="heading">ఈనాటి గ్రహస్థితి</p><p>తేదీ:&nbsp;<input type="text" name="date" id="date"style="text-align: right; width: 8%">&nbsp;&nbsp;&nbsp;సమయం:&nbsp;<input type="text" name="time" id="time" style="text-align: right; width: 5%">&nbsp;&nbsp;&nbsp;&nbsp;<button id="showPanchangam">-> పంచాంగం, గ్రహస్థితి తెలుసుకోండి</button></p><div id="panchangamViewer"></div>');
 		$('#date').datepicker({
 			dateFormat : 'dd-mm-yy',
 			defaultDate : +0,
@@ -67,18 +80,19 @@
 		showPanchangam();
 	}
 	function showPanchangam() {
-		$.getJSON("http://localhost:8888/panchangam", {
+		$.getJSON("panchangam", {
 			date : $('#date').val(),
-			time : $('#time').val(),
-			callback : ""
+			time : $('#time').val()
 		}, function(data) {
-			document.getElementById('panchangamViewer').innerHTML=buildPanchangamHTML(data); 
-			//setTimeout( function() { $("#panchangamViewer").html(}, 50 );
-
-			
+			buildPanchangamHTML(data)
 		});
 	}
+	function loadIFrame(fileName) {
+		var iFrame = "<iframe frameborder=0 width='80%' scrolling='auto' height='1024px;' id='iFrame' src='"
+				+ fileName + "'></iframe>";
+		$("#content").html(iFrame);
 
+	}
 	function load(page) {
 		loadContent("#content", page);
 	}
@@ -89,24 +103,129 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<img src="images/headerpanchanga.jpg" class="headerimage">
+			<img src="images/header.png" class="headerimage">
 			<div id="navbar">
-				<a tabindex="0" href="index.html"
+				<a tabindex="0" href="#"
 					class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all"
-					id="home" onclick="load('content/1.html')">ప్రదాన ఫుట</a> <a tabindex="1" href="#panchangam"
-					class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all"
-					id="panchangam_menu"><span class="ui-icon ui-icon-triangle-1-s"></span>పంచాంగ</a>
-				<div id="panchangam" class="hidden">
+					id="about_menu"><span class="ui-icon ui-icon-triangle-1-s"></span>పంచాంగం
+					గురించి</a>
+				<div id="about_panchangam" class="hidden">
 					<ul>
-						<li><a href="#">Today</a></li>
+						<li><a href="#" onclick="loadIFrame('content/peethika.html')">పీఠిక</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/panchanga_pathana_reeti.html')">పంచాంగ
+								పఠన రీతి</a>
+						</li>
+						<li><a href="#" onclick="loadIFrame('content/graha.html')">గ్రహములు</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/grahaGati.html')">గ్రహ గతులు</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/aboutpanchangam.html')">పంచాంగాలు</a>
+						</li>
+
 					</ul>
 				</div>
-				<a tabindex="3" href="#"
+				<a tabindex="1" href="#panchangam"
+					class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all"
+					id="years_menu"><span class="ui-icon ui-icon-triangle-1-s"></span>సంవత్సర
+					వివరములు</a>
+				<div id="years" class="hidden">
+					<ul>
+						<li><a href="#"
+							onclick="loadIFrame('content/samvatsara.html#s1')">సంవత్సర
+								ఫలితము</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/samvatsara.html#s2')">సౌరమానాబ్ద
+								ఫలము</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/samvatsara.html#s3')">కర్తరీ
+								నిర్ణయము</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/samvatsara.html#s4')">చాంద్రమానాబ్ద
+								ఫలములు</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/samvatsara.html#s5')">బార్హస్పత్యమానాబ్ద
+								ఫలము</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/samvatsara.html#s6')">గురూదయాబ్ద
+								ఫలము</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/samvatsara.html#s7')">పుష్కర
+								నిర్ణయము</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/samvatsara.html#s8')">సంవత్సర
+								ఫలిత సారాంశము</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/samvatsara.html#s9')">వర్షలగ్నము</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/samvatsara.html#s10')">జగల్లగ్నం
+						</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/samvatsara.html#s11')">భారతదేశమునకు
+								సంవత్సర ఫలితములు</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/samvatsara.html#s12')">భారతదేశమునకు
+								నెలవారీ ఫలితములు</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/samvatsara.html#s13')">రాజాది
+								నవనాయక ఫలములు</a>
+						</li>
+						<li><a href="#"
+							onclick="loadIFrame('content/samvatsara.html#s14')">ఉపనాయక
+								నిర్ణయము</a>
+						</li>
+					</ul>
+				</div>
+				<a tabindex="2" href="#"
 					class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all"
 					id="panchangam_menu" onclick="showPanchangamViewer()">గ్రహ
-					స్థితి తెలుసుకోండి</a> <a tabindex="2" href="#"
+					స్థితి </a> <a tabindex="4" href="#"
 					class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all"
-					id="contact_menu">సంప్రదించండి </a>
+					id="sm_menu"><span class="ui-icon ui-icon-triangle-1-s"></span>శుభముహుర్తములు
+				</a>
+				<div id="smonths" class="hidden">
+					<ul>
+						<li><a href="#" onclick="loadIFrame('content/sm.html#S1')">ఏప్రిల్</a>
+						</li>
+						<li><a href="#" onclick="loadIFrame('content/sm.html#S2')">మే</a>
+						</li>
+						<li><a href="#" onclick="loadIFrame('content/sm.html#S3')">జూన్</a>
+						</li>
+						<li><a href="#" onclick="loadIFrame('content/sm.html#S4')">జూలై</a>
+						</li>
+						<li><a href="#" onclick="loadIFrame('content/sm.html#S5')">ఆగస్ట్</a>
+						</li>
+						<li><a href="#" onclick="loadIFrame('content/sm.html#S6')">సెప్టెంబర్</a>
+						</li>
+						<li><a href="#" onclick="loadIFrame('content/sm.html#S7')">అక్టోబర్</a>
+						</li>
+						<li><a href="#" onclick="loadIFrame('content/sm.html#S8')">నవంబర్</a>
+						</li>
+						<li><a href="#" onclick="loadIFrame('content/sm.html#S9')">డిసెంబర్</a>
+						</li>
+						<li><a href="#" onclick="loadIFrame('content/sm.html#S10')">జనవరి</a>
+						</li>
+						<li><a href="#" onclick="loadIFrame('content/sm.html#S11')">ఫిబ్రవరి</a>
+						</li>
+						<li><a href="#" onclick="loadIFrame('content/sm.html#S12')">మార్చ్</a>
+						</li>
+					</ul>
+				</div>
 
 			</div>
 		</div>

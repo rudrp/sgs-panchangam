@@ -1,7 +1,6 @@
 package org.sgsdatta.panchangam.servlets;
 
 import java.io.IOException;
-import java.lang.reflect.Modifier;
 import java.lang.reflect.Type;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -13,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.sgsdatta.panchangam.data.Panchangam;
-import org.sgsdatta.panchangam.data.Tithi;
 import org.sgsdatta.panchangam.helper.DailyPanchangamHelper;
 import org.sgsdatta.panchangam.util.Constants;
 
@@ -41,7 +39,7 @@ public class PanchangamServlet extends HttpServlet {
 			time = null;
 		}
 		Panchangam panchangam = DailyPanchangamHelper
-				.getCurrentPanchangamByTime(date, time, timeZone);
+				.getCurrentPanchangamByTime(date, time, timeZone,language);
 		Gson gson = new GsonBuilder()
 				.registerTypeAdapter(Date.class, new JsonSerializer<Date>() {
 					@Override
