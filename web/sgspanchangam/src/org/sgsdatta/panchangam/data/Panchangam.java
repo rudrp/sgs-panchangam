@@ -43,6 +43,7 @@ public class Panchangam {
 	@Expose
 	private RaasiChakram raasiChakram = null;
 
+
 	public Long getId() {
 		return id;
 	}

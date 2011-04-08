@@ -35,10 +35,9 @@ public class DailyPanchangamHelper {
 	 *            the gregorian date
 	 * @return the current panchangam
 	 */
-	public static Panchangam getCurrentPanchangam(String gregorianDate) {
-		return getCurrentPanchangamByTime(gregorianDate, null, null
-
-		);
+	public static Panchangam getCurrentPanchangam(String gregorianDate,
+			String language) {
+		return getCurrentPanchangamByTime(gregorianDate, null, null, null);
 	}
 
 	/**
@@ -53,7 +52,7 @@ public class DailyPanchangamHelper {
 	 * @return the current panchangam by time
 	 */
 	public static Panchangam getCurrentPanchangamByTime(String gregorianDate,
-			String currentTime, String tZone) {
+			String currentTime, String tZone, String language) {
 
 		Panchangam todaysPanchangam = getPanchangamByDate(gregorianDate);
 		if (todaysPanchangam != null) {
